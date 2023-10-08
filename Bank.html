@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <title> Bank-project </title>
+            <script src="https://cdn.tailwindcss.com">teilwin</script>
+        </head>
+     
+        <body style="background-color:rgb(250, 235, 208);">
+    <header class="mt-4">
+        <h1 class="text-2xl text-center italic font-serif font-bold"><span class="text-4xl text-green-600">Welcome</span> <span class="text-5xl text-red-600 font-bold">To</span> <span class="text-4xl text-green-600"> Our Bank.</span></h1>
+        <h1 class="text-6xl text-center font-bold font-serif">Your  Trusted  <span class="text-glue-500 font-bold">Bank</span> <span class="text-red-600">!!!</span></h1>
+    </header>
+
+    <main>
+        <section class="mt-8">
+                <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                    <div class="bg-lime-500 p-8 rounded-lg">
+                        <h1  class="text-3xl font-bold">Cash In</h1>
+                        <h1 class="text-5xl font-medium">$ <span id="cash-in-total">10,000</span> </h1>
+                    </div>
+                    
+                    <div class="bg-lime-500 p-8 rounded-lg">
+                        <h1 class="text-3xl font-bold">Cash Out</h1>
+                        <h1 class="text-5xl font-medium">$ <span id="deposit-total">00.00</span></h1>
+                    </div>
+                    <div class="bg-lime-600 p-8 rounded-lg">
+                        <h1 class="text-3xl font-bold">Total Balance</h1>
+                        <h1 class="text-5xl font-medium">10,000</h1>
+                    </div>
+                </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-10">
+                <div class="bg-indigo-500 p-7 rounded-lg">
+                    <h1>Your Cash In</h1>
+                    <input id="Cash-in-input" class="w-4/5 px-4 py-3 rounder block" placeholder="$ Amount you want to Cash-in" type="number" >
+                    <button id="Cash-in-btn" class="bg-yellow-400 px-8 py-4 text-white rounded-lg mt-2 font-medium hover:bg-blue-800">Cash In</button>
+                </div>
+
+                <div class="bg-indigo-500 p-7 rounded-lg">
+                    <h1>Your Cash OUt</h1>
+                    <input id="Cash-out" class="w-4/5 px-4 py-3 rounded block" placeholder="$ Amount you want to Cash-out" type="number">
+                    <button id="Cash-out-btn" class="bg-yellow-400 px-8 py-4 text-white rounded-lg mt-2 font-bold"> Cash Out <button>
+                </div>
+        </section>
+
+        <div class="flex items-center justify-center gap-5 px-44">
+            <section class="mt-8 w-full lg:w-3/4 mx-auto my-7">
+                <div>
+                    <div class="grid lg:grid-cols-1 mx-5 lg:mx-0 gap-4">
+                        <div class="  mt-6 p-7 bg-emerald-400 min-h-[300px] rounded-lg text-center">
+                            <h1 class="text-3xl font-bold text-center ">Cash In History.</h1>
+                            <div id="text-box1" class="text-[1.2rem] py-5 px-3 h-[11rem] overflow-y-auto">
+                                <div id="depositList" class="text-left mt-3 text-xl">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+                <section class="mt-8 w-full lg:w-3/4 mx-auto my-7">
+                <div>
+                    <div class="grid lg:grid-cols-1 mx-5 lg:mx-0 gap-4">
+                        <div class="  mt-6 p-7 bg-emerald-400 min-h-[300px] rounded-lg text-center">
+                            <h1 class="text-3xl font-bold text-center ">Cash In History.</h1>
+                            <div id="text-box1" class="text-[1.2rem] py-5 px-3 h-[11rem] overflow-y-auto">
+                                <div id="depositList" class="text-left mt-3 text-xl">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+                <script src="Cash_In.js">Cash_in</script>
+                <script src="Cash_Out.js">Cash_Out</script>
+                <script src="app.js"></script>
+
+        </body>
+    </html>
+
